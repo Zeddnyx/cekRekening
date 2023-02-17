@@ -45,7 +45,7 @@ export default function Home() {
   let content;
     if (info) {
     content =  <div className='p-2 bg-blue-100 my-5 rounded'>
-      <p className='text-green-400 my-2'>Success !</p>
+      <p className='text-green-500 mb-2 text-xs font-semibold'>Success !</p>
       <div>
         <h4 className='font-bold'>Bank/E-Wallet : {info[0].accountBank}</h4>
         <h4 className='font-bold'>Name : {info[0].accountName}</h4>
@@ -55,7 +55,7 @@ export default function Home() {
   }
   if (info == undefined) {
     content =  <div className='p-2 bg-blue-100 my-5 rounded'>
-      <p className='text-red-500 my-2'>Data not found !</p>
+      <p className='text-red-500 my-2 text-xs'>Data not found !</p>
     </div>
   }
   if (load) {
@@ -105,5 +105,5 @@ const div2 = 'grid grid-cols-4 gap-y-2 py-3 mb-5 text-sm'
 const form    = 'grid grid-cols-1 md:grid-cols-2 place-items-start gap-5 bg-blue-100 p-2 rounded'
 const divForm = 'w-full flex flex-col'
 const label   = 'text-xs'
-const input   = 'p-1 border-2 border-white hover:border-blue-500 rounded outline-none bg-transparent'
-const btn     = 'w-20 bg-blue-400 hover:bg-blue-500 rounded p-1 font-bold outline-none'
+const input   = 'p-1 border-2 border-blue-500 hover:border-white rounded outline-none bg-transparent'
+const btn     = 'w-20 text-white bg-blue-400 hover:bg-blue-500 rounded p-1 font-bold outline-none'
